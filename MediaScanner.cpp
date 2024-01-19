@@ -5,13 +5,18 @@
 #include <filesystem>
 
 
+MediaScanner::MediaScanner(std::vector<Song>& songsRef,const std::string& pathfolder) 
+    :songs(songsRef),folderPath(pathfolder) {}
+//:folderPath(st){}
+
+    
 
 
-void MediaScanner::scanMedia(const std::string& folderPath) {
+    void MediaScanner::scanMedia(const std::string& folderPath){
     int totalFiles = 0;
     int scannedFiles = 0;
 
-    for (const auto& entry : std::filesystem::directory_iterator(folderPath)) {
+    for (const auto& entry:std::filesystem::directory_iterator(folderPath)) {
         if (entry.is_regular_file()) {
             totalFiles++;
         }
@@ -32,7 +37,10 @@ void MediaScanner::scanMedia(const std::string& folderPath) {
     std::cout << "\n[100%] Scan Completed!\n";
 }
 
-void MediaScanner::displayScanProgress(int percentage) const {
+
+
+void MediaScanner::displayScanProgress(int percentage) const
+{
     std::cout << "[" << percentage << "%] ";
     std::cout.flush();
 }

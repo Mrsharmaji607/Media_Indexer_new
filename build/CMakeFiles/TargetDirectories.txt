@@ -1,0 +1,3 @@
+/home/kpit/MediaIndexer/build/CMakeFiles/edit_cache.dir
+/home/kpit/MediaIndexer/build/CMakeFiles/rebuild_cache.dir
+/home/kpit/MediaIndexer/build/CMakeFiles/media_app.dir

@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kpit/MediaIndexer/MediaDatabse.h
+/home/kpit/MediaIndexer/Songs.h
+-
+vector
+-
+
+/home/kpit/MediaIndexer/MediaExtractor.h
+Songs.h
+/home/kpit/MediaIndexer/Songs.h
+
+/home/kpit/MediaIndexer/MediaScanner.h
+MediaDatabse.h
+/home/kpit/MediaIndexer/MediaDatabse.h
+MediaExtractor.h
+/home/kpit/MediaIndexer/MediaExtractor.h
+vector
+-
+string
+-
+Songs.h
+/home/kpit/MediaIndexer/Songs.h
+
+/home/kpit/MediaIndexer/Songs.h
+string
+-
+
+/home/kpit/MediaIndexer/main.cpp
+MediaScanner.h
+/home/kpit/MediaIndexer/MediaScanner.h
+MediaExtractor.h
+/home/kpit/MediaIndexer/MediaExtractor.h
+Songs.h
+/home/kpit/MediaIndexer/Songs.h
+iostream
+-
+filesystem
+-
+

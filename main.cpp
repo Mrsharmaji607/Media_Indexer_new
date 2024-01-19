@@ -6,8 +6,12 @@
 
 
 int main() {
+    std::vector<Song> songs;
+    
     // Hardcoded path to the folder containing media files
     std::string folderPath = "/home/kpit/Desktop/DemoAudio";
+    MediaScanner mediaScanner(songs,folderPath);
+    mediaScanner.scanMedia();
 
     // Check if the folder exists
     if (!std::filesystem::exists(folderPath)) {
@@ -16,7 +20,7 @@ int main() {
     }
 
     // Create a media scanner with the specified folder path
-    MediaScanner mediaScanner(folderPath);
+    
 
     while (true) {
         std::cout << "\nOptions:\n"

@@ -1,16 +1,24 @@
-cmake_minimum_required(VERSION 3.12)
-project(MediaIndexer)
+cmake_minimum_required(VERSION 3.10)
+project(MediaScannerProject)
 
-set(CMAKE_CXX_STANDARD 11)
+# Set C++ standard to C++17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Source files
-set(SRCS
-    Main.cpp
+# Add executable
+add_executable(media_app
+    main.cpp
     MediaScanner.cpp
     MediaExtractor.cpp
-    MediaDatabase.cpp
-    Song.cpp
+    MediaDatabse.cpp
+    Songs.cpp
+    MediaScanner.h
+    MediaExtractor.h
+    MediaDatabse.h
+    Songs.h
 )
 
-# Create executable
-add_executable(media_app ${SRCS})
+# Set include directories
+target_include_directories(media_app PRIVATE include)
+
+

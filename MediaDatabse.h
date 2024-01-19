@@ -11,6 +11,8 @@ private:
 public:
     void addSong(const Song& song);
     void displayAllSongs() const;
+
+    std::vector<Song> getSongs() const { return songs; }
 };
 
 #endif // MEDIADATABASE_H
